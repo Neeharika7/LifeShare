@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bloodavailability"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.microsoft.bvrith.lifeshare.bloodavailability">
+
+    <TextView
+        android:text="BLOOD AVAILABILITY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/bloodavaillist"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="Blood Group : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/bloodgrp"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/bloodavaillist"
+        android:layout_alignLeft="@+id/bloodavaillist"
+        android:layout_alignStart="@+id/bloodavaillist" />
+
+    <Button
+        android:text="POST FOR BLOOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:id="@+id/post"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:text="B-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bg"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBaseline="@+id/bloodgrp"
+        android:layout_alignBottom="@+id/bloodgrp"
+        android:layout_alignRight="@+id/post"
+        android:layout_alignEnd="@+id/post"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="Unavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodgrp"
+        android:layout_alignLeft="@+id/bloodgrp"
+        android:layout_alignStart="@+id/bloodgrp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="63dp"
+        android:id="@+id/unavail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guestfb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.microsoft.bvrith.lifeshare.guestfb">
+
+    <TextView
+        android:text="FIND BLOOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/findblood"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text=" Select :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/select"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/findblood"
+        android:layout_toLeftOf="@+id/findblood"
+        android:layout_toStartOf="@+id/findblood" />
+
+    <RadioButton
+        android:text="B+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aP"
+        android:layout_alignLeft="@+id/aP"
+        android:layout_alignStart="@+id/aP"
+        android:layout_marginTop="19dp"
+        android:id="@+id/bp"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioButton
+        android:text="B-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bn"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBaseline="@+id/bp"
+        android:layout_alignBottom="@+id/bp"
+        android:layout_alignLeft="@+id/aN"
+        android:layout_alignStart="@+id/aN" />
+
+    <RadioButton
+        android:text="A+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/aP"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/select"
+        android:layout_alignLeft="@+id/select"
+        android:layout_alignStart="@+id/select"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp" />
+
+    <RadioButton
+        android:text="A-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aN"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBaseline="@+id/aP"
+        android:layout_alignBottom="@+id/aP"
+        android:layout_alignRight="@+id/findblood"
+        android:layout_alignEnd="@+id/findblood" />
+
+    <RadioButton
+        android:text="AB+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bp"
+        android:layout_alignLeft="@+id/bp"
+        android:layout_alignStart="@+id/bp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/abp"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioButton
+        android:text="AB-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/abp"
+        android:layout_alignLeft="@+id/bn"
+        android:layout_alignStart="@+id/bn"
+        android:id="@+id/abn"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioButton
+        android:text="O+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/op"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/abp"
+        android:layout_alignLeft="@+id/abp"
+        android:layout_alignStart="@+id/abp" />
+
+    <RadioButton
+        android:text="O-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/op"
+        android:layout_alignLeft="@+id/abn"
+        android:layout_alignStart="@+id/abn"
+        android:id="@+id/on"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textIsSelectable="false" />
+
+    <Button
+        android:text="FIND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/findb"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+</RelativeLayout>
